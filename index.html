@@ -8,44 +8,7 @@
 		El autor no se hace responsable de los resultados de su uso
 		ni de posibles daños derivados.
 		-->
-		
-		<script type="text/javascript" src="jquery-3.4.1.js"></script>
-		
-	</head>
-	
-<body>
-
-<p>Calculadora</p>
-	
-<div class="content">
-	<div class="calcu">
-		<div class="pantalla"></div>
-		<input type="hidden" value="" class="salida" />
-		<ul class="buttons">
-			<input class="clear" type="button" value="C">
-			<input class="val" type="button" value="&plusmn;">
-			<input class="val" type="button" value="/">
-			<input class="val" type="button" value="*">
-			<input class="val" type="button" value="7">
-			<input class="val" type="button" value="8">
-			<input class="val" type="button" value="9">
-			<input class="val" type="button" value="-">
-			<input class="val" type="button" value="4">
-			<input class="val" type="button" value="5">
-			<input class="val" type="button" value="6">
-			<input class="val" type="button" value="+">
-			<input class="val" type="button" value="1">
-			<input class="val" type="button" value="2">
-			<input class="val" type="button" value="3">
-			<input class="val wide shift" type="button" value="0">
-			<input class="val shift" type="button" value=".">
-			<input class="equal tall" type="button" value="=">
-		</ul>
-	</div>
-</div>
-
 <style>
-
 //Código css
 
 p {
@@ -59,6 +22,7 @@ p {
 	padding: 10px;
 	border-radius: 8px;
 }
+	
 .content {
     width:480px;
     margin:20px auto 0;
@@ -116,6 +80,7 @@ p {
      overflow: hidden;
      list-style: none;
 }
+	
 .buttons input {
      display:inline;
      float:left;
@@ -123,6 +88,7 @@ p {
      margin-right:13px;
      margin-bottom:10px;
 }
+	
 .buttons input:nth-child(4n) {
      margin-right:0;
 }
@@ -156,6 +122,7 @@ p {
      box-sizing:border-box;
      cursor: pointer;
 }
+	
 .buttons input:active{
      box-shadow: inset rgba(0,0,0,0.5) 0px 2px 8px;
      background-image:-moz-linear-gradient(top, #2f2f2f 0%, #363636 100%);
@@ -173,10 +140,12 @@ p {
  padding:0;
  position: absolute;
 }
+	
 .ctrls input[value]{
  float:left;
  display:inline;
 }
+	
 .ctrls input[value]{
  display: block;
  width:18px;
@@ -190,6 +159,42 @@ p {
 }
 
 </style>
+		
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		
+	</head>
+	
+<body>
+
+<p>Calculadora</p>
+	
+<div class="content">
+	<div class="calcu">
+		<div class="pantalla"></div>
+		<input type="hidden" value="" class="salida" />
+		<ul class="buttons">
+			<input class="clear" type="button" value="C">
+			<input class="val" type="button" value="&plusmn;">
+			<input class="val" type="button" value="/">
+			<input class="val" type="button" value="*">
+			<input class="val" type="button" value="7">
+			<input class="val" type="button" value="8">
+			<input class="val" type="button" value="9">
+			<input class="val" type="button" value="-">
+			<input class="val" type="button" value="4">
+			<input class="val" type="button" value="5">
+			<input class="val" type="button" value="6">
+			<input class="val" type="button" value="+">
+			<input class="val" type="button" value="1">
+			<input class="val" type="button" value="2">
+			<input class="val" type="button" value="3">
+			<input class="val wide shift" type="button" value="0">
+			<input class="val shift" type="button" value=".">
+			<input class="equal tall" type="button" value="=">
+		</ul>
+	</div>
+</div>
+
 <script>
 
 //Código JavaScript JQuery
